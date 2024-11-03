@@ -263,7 +263,7 @@ section.How div.Qaybo div.qayb.Midig span {
   width: 95px;
   height: 20px;
   background-color: var(--Green-100);
-  color: var(--Green-800);
+  color: var(--Green-500);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -387,7 +387,7 @@ div.serv_section div.serv div.Title_and_desc span {
   align-items: center;
   flex-flow: wrap column;
   background-color: var(--Green-100);
-  color: var(--Green-800);
+  color: var(--Green-500);
   font-family: "Nooca1aad";
   font-size: 13px;
   font-weight: 500;
@@ -629,7 +629,7 @@ section.Pricing div.Price div.Title_and_desc span.title {
   align-items: center;
   flex-flow: wrap column;
   background-color: var(--Green-100);
-  color: var(--Green-800);
+  color: var(--Green-500);
   font-family: "Nooca1aad";
   font-size: 13px;
   font-weight: 500;
@@ -933,6 +933,618 @@ div.Richtext div.textMore div.Moretext div.textRight ul li {
   font-weight: 500;
   margin: 15px 0px;
 }
+
+div.numbers_Section {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0px;
+  background-color: var(--Gray-900);
+}
+
+div.numbers_Section div.numbers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+div.numbers_Section div.numbers div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.numbers_Section div.numbers div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.numbers_Section div.numbers div.Title_and_desc h2 {
+  font-size: 25px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+div.numbers_Section div.numbers div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+div.numbers_Section div.numbers div.counts {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+
+div.numbers_Section div.numbers div.counts div.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.numbers_Section div.numbers div.counts div.count h3 {
+  font-size: 30px;
+  font-family: "Nooca2aad";
+  color: var(--Green-500);
+  margin: 15px 0px;
+}
+
+div.numbers_Section div.numbers div.counts div.count p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+/* Team section style */
+section.TeamSection {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 40px 0px;
+}
+
+section.TeamSection div.Team {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: wrap column;
+}
+
+section.TeamSection div.Team div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: wrap column;
+}
+
+section.TeamSection div.Team div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+section.TeamSection div.Team div.Title_and_desc h2 {
+  font-size: 23px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+section.TeamSection div.Team div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: left;
+}
+
+section.TeamSection div.Team div.TeamPersons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  padding: 40px 0px;
+  gap: 8%;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person div.image {
+  width: 88px;
+  height: 88px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+section.TeamSection div.Team div.TeamPersons div.Person div.image img {
+  width: 100%;
+  height: 100%;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person div.info_Person {
+  width: 100%;
+  height: 100%;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person div.info_Person h2 {
+  font-size: 14px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 5px 0px;
+}
+section.TeamSection div.Team div.TeamPersons div.Person div.info_Person h3 {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Green-500);
+  margin: 5px 0px;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person div.info_Person p {
+  font-size: 14px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  margin: 5px 0px;
+}
+
+section.TeamSection div.Team div.TeamPersons div.Person div.social_links {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 24px);
+  grid-template-rows: repeat(1, 24px);
+  column-gap: 12px;
+}
+
+section.TeamSection
+  div.Team
+  div.TeamPersons
+  div.Person
+  div.social_links
+  div.linksocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+section.TeamSection
+  div.Team
+  div.TeamPersons
+  div.Person
+  div.social_links
+  div.linksocial
+  i {
+  color: var(--Gray-700);
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+/* Clients */
+div.Clients {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 45px 0px;
+}
+
+div.Clients div.Client {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+
+div.Clients div.Client div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: wrap column;
+}
+
+div.Clients div.Client div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.Clients div.Client div.Title_and_desc h2 {
+  font-size: 30px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+div.Clients div.Client div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: left;
+}
+
+div.Clients div.Client div.ClientLogo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 15%;
+}
+
+div.Clients div.Client div.ClientLogo div.logo {
+  background-color: var(--Gray-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  border-radius: 5px;
+}
+
+/* Blog Style */
+div.Blogs {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 40px 0px;
+}
+
+div.Blogs div.Blog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+div.Blogs div.Blog div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.Blogs div.Blog div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.Blogs div.Blog div.Title_and_desc h2 {
+  font-size: 30px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+  text-align: center;
+}
+
+div.Blogs div.Blog div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+div.Blogs div.Blog div.Title_and_desc form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  margin: 25px 0px;
+}
+
+div.Blogs div.Blog div.Title_and_desc form input {
+  width: 300px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding-left: 35px;
+  padding-right: 15px;
+  color: var(--Gray-900);
+  font-size: 16px;
+  font-family: "Nooca1aad";
+  background-color: var(--Gray-50);
+}
+
+div.Blogs div.Blog div.Title_and_desc form input::placeholder {
+  color: var(--Gray-500);
+}
+
+div.Blogs div.Blog div.Title_and_desc form div.searchinput {
+  position: relative;
+}
+
+div.Blogs div.Blog div.Title_and_desc form div.searchinput i {
+  position: absolute;
+  color: var(--Gray-500);
+  font-size: 17px;
+  top: 13px;
+  left: 13px;
+}
+
+div.Blogs div.Blog div.blogs_and_cat {
+  width: 100%;
+  height: 100%;
+}
+
+div.Blogs div.Blog div.blogs_and_cat div.cats {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.Blogs div.Blog div.blogs_and_cat div.cats ul.cats {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  list-style: none;
+  padding: 15px 0px;
+}
+
+div.Blogs div.Blog div.blogs_and_cat div.cats ul.cats li {
+  padding: 10px 15px;
+  color: var(--Gray-600);
+  font-family: "Nooca1aad";
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px 15px;
+  border-radius: 10px;
+}
+
+div.Blogs div.Blog div.blogs_and_cat div.cats ul.cats li:nth-child(1) {
+  background-color: var(--Green-200);
+  color: var(--Green-800);
+}
+
+div.Blogs div.Blog div.blogs_grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 25px;
+  margin: 30px 0px;
+}
+
+div.Blogs div.Blog div.blog_grid div.image_Blog {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.Blogs div.Blog div.blog_grid div.image_Blog img {
+  width: 100%;
+  height: 100%;
+}
+
+div.Blogs div.Blog div.blog_grid div.info {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+div.Blogs div.Blog div.blog_grid div.info span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.Blogs div.Blog div.blog_grid div.info p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  margin: 10px 0px;
+}
+
+div.Blogs div.Blog div.blog_grid div.info h2 {
+  font-size: 17px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+div.Blogs div.Blog div.blog_grid div.info button {
+  width: 140px;
+  height: 40px;
+  outline: none;
+  background-color: var(--Gray-900);
+  border: none;
+  font-family: "Nooca1aad";
+  font-size: 16px;
+  color: var(--Green-500);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* NewsLetter style */
+div.newsletter {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0px;
+  background-color: var(--Gray-900);
+}
+
+div.newsletter div.OurNews {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+div.newsletter div.OurNews div.Qayb {
+  width: calc(90% / 2);
+}
+
+div.newsletter div.OurNews div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.newsletter div.OurNews div.News div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.newsletter div.OurNews div.Title_and_desc h2 {
+  font-size: 30px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+div.newsletter div.OurNews div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+}
+
+div.newsletter div.OurNews div.Qayb.singup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+div.newsletter div.OurNews div.Qayb.singup input {
+  width: 70%;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding-left: 35px;
+  padding-right: 15px;
+  color: var(--Gray-900);
+  font-size: 16px;
+  font-family: "Nooca1aad";
+  background-color: var(--Gray-50);
+}
+
+div.newsletter div.OurNews div.Qayb.singup button {
+  width: 20%;
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  margin: 0px 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  cursor: pointer;
+}
+
+div.newsletter div.OurNews div.Qayb.singup p {
+  font-size: 12px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  margin: 10px 0px;
+}
+
+div.newsletter div.OurNews div.Qayb.singup p > span {
+  color: var(--Green-500);
+}
+
 /* xsm screen*/
 @media (max-width: 480px) {
   .Haye {
