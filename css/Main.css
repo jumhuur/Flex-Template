@@ -793,6 +793,7 @@ section.Pricing div.Price div.PriceTypes div.PriceType div.btn_Price button {
   border-radius: 6px;
   font-size: 14px;
   font-family: "Nooca1aad";
+  cursor: pointer;
 }
 
 section.Pricing div.Price div.PriceTypes div.PriceType ul.listServ {
@@ -814,6 +815,124 @@ section.Pricing div.Price div.PriceTypes div.PriceType ul.listServ li i {
   color: var(--Green-500);
 }
 
+/* Richtext style */
+div.Richtext {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+}
+
+div.Richtext div.textMore {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+
+div.Richtext div.textMore div.Title_and_Btns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+div.titles {
+}
+div.Richtext div.textMore div.Title_and_Btns div.titles span {
+  display: block;
+  width: 70px;
+  height: 20px;
+  background-color: var(--Green-100);
+  color: var(--Green-500);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  font-size: 14px;
+  font-family: "Nooca1aad";
+}
+
+div.Richtext div.textMore div.Title_and_Btns div.titles h2 {
+  font-size: 30px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  position: relative;
+  padding: 10px 0px;
+}
+
+div.Richtext div.textMore div.Title_and_Btns div.titles p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  font-weight: 500;
+}
+
+div.Richtext div.textMore div.Title_and_Btns div.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+}
+
+div.Richtext div.textMore div.Title_and_Btns div.btns button {
+  width: calc(60% / 2);
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  margin: 0px 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  cursor: pointer;
+}
+
+div.Richtext div.textMore div.Title_and_Btns div.btns button:nth-child(2) {
+  background-color: var(--Gray-600);
+}
+
+div.Richtext div.textMore div.Moretext {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+  padding: 50px 0px;
+  gap: 5%;
+}
+
+div.Richtext div.textMore div.Moretext div.text_Left p {
+  font-size: 16px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+div.Richtext div.textMore div.Moretext div.textRight p {
+  font-size: 16px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  font-weight: 500;
+  margin: 15px 0px;
+}
+
+div.Richtext div.textMore div.Moretext div.textRight ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.Richtext div.textMore div.Moretext div.textRight ul li {
+  font-size: 16px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  font-weight: 500;
+  margin: 15px 0px;
+}
 /* xsm screen*/
 @media (max-width: 480px) {
   .Haye {
