@@ -1,0 +1,857 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --Cadaan: #ffffff;
+  --Gray-50: #f7f8f9;
+  --Gray-100: #eef0f3;
+  --Gray-200: #d5dae1;
+  --Gray-300: #bbc3cf;
+  --Gray-400: #8896ab;
+  --Gray-500: #556987;
+  --Gray-600: #4d5f7a;
+  --Gray-700: #404f65;
+  --Gray-800: #333f51;
+  --Gray-900: #2a3342;
+
+  --Green-50: #f0fdf4;
+  --Green-100: #dcfce7;
+  --Green-200: #bbf7d0;
+  --Green-300: #86efac;
+  --Green-400: #4ade80;
+  --Green-500: #22c55e;
+  --Green-600: #16a34a;
+  --Green-700: #15803d;
+  --Green-800: #166534;
+}
+
+@font-face {
+  font-family: "Nooca1aad";
+  src: url(/Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nooca2aad";
+  src: url(/Fonts/Poppins-Bold.ttf);
+}
+
+.Haye {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* nav bar style */
+div.navSection {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+div.navSection nav {
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 100px 2.5fr 1fr;
+  grid-template-rows: repeat(1, auto);
+  justify-content: center;
+  align-content: center;
+}
+
+div.navSection nav div.logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.navSection nav ul.links {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  list-style: none;
+}
+
+div.navSection nav ul.links li {
+  margin: 0px 8px;
+}
+
+div.navSection nav ul.links li a {
+  text-decoration: none;
+  color: var(--Gray-400);
+  font-family: "Nooca1aad";
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s linear;
+}
+
+div.navSection nav ul.links li a:hover {
+  color: var(--Gray-50);
+}
+
+div.navSection nav div.actions {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+div.navSection nav div.actions button {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  font-family: "Nooca1aad";
+  margin: 0px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div.navSection nav div.actions button:nth-child(1) {
+  color: var(--Gray-400);
+  background-color: transparent;
+}
+
+/* Hero Style */
+section.Hero {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 5% 0px;
+}
+
+section.Hero div.Parts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+section.Hero div.Parts div.part {
+  width: calc(95% / 2);
+}
+
+section.Hero div.Parts div.part.left span {
+  display: block;
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--Green-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--Gray-100);
+  font-family: "Nooca1aad";
+  font-size: 14px;
+  font-family: 400;
+  margin: 15px 0px;
+}
+
+section.Hero div.Parts div.part.left h2 {
+  font-size: 52px;
+  font-family: "Nooca2aad";
+  font-weight: bold;
+  color: var(--Cadaan);
+  line-height: 1.1;
+  margin: 15px 0px;
+}
+
+section.Hero div.Parts div.part.left p {
+  font-size: 17px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  margin: 15px 0px;
+}
+
+section.Hero div.Parts div.part.left div.btn_Hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+section.Hero div.Parts div.part.left div.btn_Hero button {
+  width: 50%;
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  font-family: "Nooca1aad";
+  margin: 0px 8px;
+  border-radius: 5px;
+  padding: 10px 0px;
+  color: var(--Gray-50);
+  cursor: pointer;
+}
+
+section.Hero div.Parts div.part.left div.btn_Hero button:nth-child(2) {
+  width: 25%;
+  background-color: var(--Gray-700);
+  color: var(--Gray-100);
+}
+
+section.Hero div.Parts div.part.right {
+  height: 400px;
+  position: relative;
+  padding: 10px;
+}
+
+section.Hero div.Parts div.part.right img {
+  width: 100%;
+  height: 100%;
+}
+
+section.Hero div.Parts div.part.right div.pt {
+  height: 100px;
+  position: absolute;
+}
+
+section.Hero div.Parts div.part.right div.pt:nth-child(1) {
+  top: -35px;
+  left: -15px;
+}
+
+section.Hero div.Parts div.part.right div.pt:nth-child(2) {
+  bottom: -21px;
+  right: -28px;
+}
+
+/* how it Works Style  */
+section.How {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 8% 0px;
+}
+
+section.How div.Qaybo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: wrap row;
+}
+
+section.How div.Qaybo div.qayb {
+  width: calc(95% / 2);
+}
+
+section.How div.Qaybo div.qayb.Midig span {
+  display: block;
+  width: 95px;
+  height: 20px;
+  background-color: var(--Green-100);
+  color: var(--Green-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-family: "Nooca1aad";
+}
+
+section.How div.Qaybo div.qayb.Midig h2 {
+  font-size: 38px;
+  font-family: "Nooca2aad";
+  font-weight: bold;
+  color: var(--Cadaan);
+  line-height: 1.1;
+  margin: 15px 0px;
+}
+
+section.How div.Qaybo div.qayb.Midig div.cards {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 0px;
+}
+
+section.How div.Qaybo div.qayb.Midig div.cards div.card div.num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--Green-500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  color: var(--Gray-900);
+  font-family: "Nooca2aad";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+section.How div.Qaybo div.qayb.Midig div.cards div.card div.info {
+  width: 100%;
+  height: 100%;
+}
+
+section.How div.Qaybo div.qayb.Midig div.cards div.card div.info h3 {
+  font-size: 16px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  line-height: 1.1;
+  margin: 15px 0px;
+}
+
+section.How div.Qaybo div.qayb.Midig div.cards div.card div.info p {
+  font-size: 14px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+}
+
+section.How div.Qaybo div.qayb.bidix {
+  padding: 10px;
+  height: 400px;
+  position: relative;
+}
+
+section.How div.Qaybo div.qayb.bidix img {
+  width: 100%;
+  height: 100%;
+}
+
+section.How div.Qaybo div.qayb.bidix div.pt {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+section.How div.Qaybo div.qayb.bidix div.pt:nth-child(1) {
+  top: -25px;
+  right: 0;
+}
+
+section.How div.Qaybo div.qayb.bidix div.pt:nth-child(2) {
+  bottom: -20px;
+  left: 0;
+}
+
+/*serv style */
+div.serv_section {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+}
+
+div.serv_section div.serv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+div.serv_section div.serv div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+div.serv_section div.serv div.Title_and_desc span {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-800);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+div.serv_section div.serv div.Title_and_desc h2 {
+  font-size: 25px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+div.serv_section div.serv div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+}
+
+div.serv_section div.cards_grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: var(--Gray-900);
+  margin: 7% 0px;
+}
+
+div.serv_section div.cards_grid div.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+  padding: 10px;
+}
+
+div.serv_section div.cards_grid div.card:nth-child(2) {
+  grid-row: span 2;
+}
+
+div.serv_section div.cards_grid div.card:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+}
+
+div.serv_section div.cards_grid div.card div.icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--Green-500);
+  color: var(--Gray-900);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  flex-shrink: 0;
+}
+
+div.serv_section div.cards_grid div.card div.icon i {
+  color: var(--Gray-900);
+  font-size: 18px;
+}
+
+div.serv_section div.cards_grid div.card div.info_card {
+  width: 100%;
+  height: 100%;
+  margin: 15px 0px;
+}
+
+div.serv_section div.cards_grid div.card div.info_card h2 {
+  font-size: 16px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+div.serv_section div.cards_grid div.card div.info_card p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+  text-align: center;
+}
+
+/* Join SECTION Style */
+section.JoinSection {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 5% 0px;
+}
+
+section.JoinSection div.join {
+  width: 100%;
+  height: 100%;
+}
+
+section.JoinSection div.join div.qaybo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+}
+
+section.JoinSection div.join div.qaybo div.qayb {
+  width: calc(95% / 2);
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix h2 {
+  font-size: 35px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix ul.lis_p {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix ul.lis_p li {
+  color: var(--Gray-400);
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  margin: 10px 0px;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix ul.lis_p li i {
+  color: var(--Green-600);
+  font-size: 16px;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix div.btn_join {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: wrap row;
+  margin: 5% 0px;
+  padding: 10px 0px;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.bidix div.btn_join button {
+  width: calc(60% / 2);
+  height: 45px;
+  outline: none;
+  border: none;
+  background-color: var(--Gray-700);
+  color: var(--Gray-100);
+  margin: 0px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Nooca1aad";
+}
+
+section.JoinSection
+  div.join
+  div.qaybo
+  div.qayb.bidix
+  div.btn_join
+  button:nth-child(2) {
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig {
+  height: 350px;
+  position: relative;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig img.image4 {
+  z-index: 2;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig div.pt {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig div.pt:nth-child(1) {
+  top: -41px;
+  right: -39px;
+  z-index: 3;
+}
+
+section.JoinSection div.join div.qaybo div.qayb.Midig div.pt:nth-child(2) {
+  bottom: -25px;
+  left: -31px;
+  z-index: 1;
+}
+
+/* Pricing Style */
+section.Pricing {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Gray-900);
+  padding: 40px 0px;
+}
+
+section.Pricing div.Price {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+section.Pricing div.Price div.Title_and_desc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+section.Pricing div.Price div.Title_and_desc span.title {
+  display: block;
+  width: 85px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  background-color: var(--Green-100);
+  color: var(--Green-800);
+  font-family: "Nooca1aad";
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+section.Pricing div.Price div.Title_and_desc h2 {
+  font-size: 25px;
+  font-family: "Nooca2aad";
+  color: var(--Cadaan);
+  margin: 15px 0px;
+}
+
+section.Pricing div.Price div.Title_and_desc p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+}
+
+section.Pricing div.Price div.Title_and_desc div.switch {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+section.Pricing div.Price div.Title_and_desc div.switch span.my {
+  display: block;
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  color: var(--Gray-500);
+  font-family: "Nooca1aad";
+  font-size: 14px;
+}
+
+section.Pricing div.Price div.Title_and_desc div.switch span.my.active {
+  color: var(--Gray-50);
+}
+
+section.Pricing div.Price div.Title_and_desc div.switch div.btn_switch {
+  width: 60px;
+  height: 25px;
+  background-color: var(--Green-500);
+  border-radius: 20px;
+  position: relative;
+}
+
+section.Pricing div.Price div.Title_and_desc div.switch div.btn_switch span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--Gray-50);
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+
+section.Pricing div.Price div.PriceTypes {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 30px;
+  margin: 55px 0px;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType {
+  background-color: var(--Cadaan);
+  border-radius: 6px;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.TitlePrice {
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap column;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.TitlePrice h2 {
+  font-size: 20px;
+  font-family: "Nooca2aad";
+  color: var(--Gray-900);
+  margin: 15px 0px;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.TitlePrice p {
+  font-size: 15px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-400);
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.Dollar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.Dollar > h2 {
+  font-size: 50px;
+  font-family: "Nooca2aad";
+  color: var(--Gray-900);
+  position: relative;
+}
+
+section.Pricing
+  div.Price
+  div.PriceTypes
+  div.PriceType
+  div.Dollar
+  > h2
+  span.Dollarsing {
+  font-size: 18px;
+  position: absolute;
+  left: -15px;
+  top: 10px;
+}
+
+section.Pricing
+  div.Price
+  div.PriceTypes
+  div.PriceType
+  div.Dollar
+  > h2
+  span.PriceTime {
+  font-size: 18px;
+  position: absolute;
+  right: -40px;
+  bottom: 10px;
+  color: var(--Gray-500);
+  font-family: "Nooca1aad";
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.btn_Price {
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType div.btn_Price button {
+  width: 75%;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  margin: 0px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: "Nooca1aad";
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType ul.listServ {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 10px 25px;
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType ul.listServ li {
+  margin: 20px 0px;
+  font-size: 14px;
+  font-family: "Nooca1aad";
+  color: var(--Gray-500);
+}
+
+section.Pricing div.Price div.PriceTypes div.PriceType ul.listServ li i {
+  color: var(--Green-500);
+}
+
+/* xsm screen*/
+@media (max-width: 480px) {
+  .Haye {
+    width: 400px;
+  }
+}
+
+/* sm screen*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .Haye {
+    width: 700px;
+  }
+}
+
+/* MD screen*/
+@media (min-width: 767px) and (max-width: 992px) {
+  .Haye {
+    width: 900px;
+  }
+}
+
+/* lG screen*/
+@media (min-width: 992px) and (max-width: 1200px) {
+  .Haye {
+    width: 1000px;
+  }
+}
+
+/* XlG screen*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .Haye {
+    width: 1100px;
+  }
+}
+
+/* XXlG screen*/
+@media (min-width: 1400px) {
+  .Haye {
+    width: 1200px;
+  }
+}
