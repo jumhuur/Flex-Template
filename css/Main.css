@@ -64,7 +64,6 @@ option {
 /* nav bar style */
 div.navSection {
   width: 100%;
-  height: 100%;
   background-color: var(--Gray-900);
   position: sticky;
   top: 0;
@@ -79,6 +78,7 @@ div.navSection nav {
   grid-template-rows: repeat(1, auto);
   justify-content: center;
   align-content: center;
+  position: relative;
 }
 
 div.navSection nav div.logo {
@@ -166,10 +166,105 @@ div.NavMobileIcon {
   background-color: var(--Green-300);
   border-radius: 5px;
   cursor: pointer;
+  /* visibility: hidden;
+  opacity: 0; */
+  transform: translate(5px, 5px);
 }
 
 div.NavMobileIcon:hover {
   background-color: var(--Green-400);
+}
+
+div.Mobile_Nav {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Green-500);
+  z-index: 99;
+  position: absolute;
+  top: 79px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(0px, 30px);
+  transition: all 0.8s ease-in-out;
+}
+
+div.Mobile_Nav.Active {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+div.navM {
+  width: 100%;
+  background-color: #2a3342;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  padding: 15px 15px;
+}
+
+div.Mobile_Nav ul.linksMobile {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: nowrap column;
+  list-style: none;
+}
+
+div.Mobile_Nav ul.linksMobile li {
+  margin: 10px 8px;
+}
+
+div.Mobile_Nav ul.linksMobile li a {
+  text-decoration: none;
+  color: var(--Gray-400);
+  font-family: "Nooca1aad";
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.5s linear;
+  border-bottom: solid 1.5px transparent;
+}
+
+div.Mobile_Nav ul.linksMobile li a:hover {
+  color: var(--Gray-50);
+  border-bottom: solid 1.5px var(--Green-500);
+}
+
+div.Mobile_Nav div.actions_Mobile {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: nowrap row;
+  margin: 15px 0px;
+}
+
+div.Mobile_Nav div.actions_Mobile button {
+  width: 80px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: var(--Green-500);
+  color: var(--Gray-50);
+  font-family: "Nooca1aad";
+  margin: 0px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: solid 1.5px transparent;
+}
+
+div.Mobile_Nav div.actions_Mobile button:hover {
+  background-color: var(--Gray-900);
+  border: solid 1.5px var(--Green-500);
+  color: var(--Gray-50);
+}
+
+div.Mobile_Nav div.actions_Mobile button:nth-child(1) {
+  color: var(--Gray-400);
+  background-color: transparent;
 }
 
 /* Hero Style */
@@ -177,7 +272,7 @@ section.Hero {
   width: 100%;
   height: 100%;
   background-color: var(--Gray-900);
-  padding: 5% 0px;
+  padding: 55px 0px;
 }
 
 section.Hero div.Parts {
@@ -214,7 +309,7 @@ section.Hero div.Parts div.part.left h2 {
   font-family: "Nooca2aad";
   font-weight: bold;
   color: var(--Cadaan);
-  line-height: 1.1;
+  line-height: 1.3;
   margin: 15px 0px;
 }
 
@@ -2565,6 +2660,10 @@ footer div.CopyRight p {
     height: 300px;
   }
 
+  section.Hero div.Parts div.part.right div.pt:nth-child(2) {
+    right: 0;
+  }
+
   /* How */
   section.How div.Qaybo {
     flex-flow: wrap column;
@@ -2616,6 +2715,10 @@ footer div.CopyRight p {
   section.JoinSection div.join div.qaybo div.qayb.Midig {
     height: 250px;
     position: relative;
+  }
+
+  section.JoinSection div.join div.qaybo div.qayb.Midig div.pt:nth-child(1) {
+    right: -26px;
   }
 
   /* Rich Text */
@@ -2805,6 +2908,11 @@ footer div.CopyRight p {
     grid-template-columns: 100px 1fr;
   }
 
+  /* Hero */
+
+  section.Hero {
+    padding: 0px 0px;
+  }
   section.Hero div.Parts {
     flex-flow: nowrap column;
   }
