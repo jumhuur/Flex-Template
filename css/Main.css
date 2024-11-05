@@ -175,36 +175,25 @@ div.NavMobileIcon:hover {
   background-color: var(--Green-400);
 }
 
-div.Mobile_Nav {
+div.NavMobile {
   width: 100%;
-  height: 100%;
-  background-color: var(--Green-500);
-  z-index: 99;
+  background-color: var(--Gray-800);
   position: absolute;
-  top: 79px;
+  top: 80px;
+  padding: 15px 15px;
   visibility: hidden;
   opacity: 0;
   transform: translate(0px, 30px);
   transition: all 0.8s ease-in-out;
 }
 
-div.Mobile_Nav.Active {
+div.NavMobile.Active {
   visibility: visible;
   opacity: 1;
   transform: translate(0px, 0px);
 }
 
-div.navM {
-  width: 100%;
-  background-color: #2a3342;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: nowrap column;
-  padding: 15px 15px;
-}
-
-div.Mobile_Nav ul.linksMobile {
+div.NavMobile ul.linksMobile {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -213,11 +202,11 @@ div.Mobile_Nav ul.linksMobile {
   list-style: none;
 }
 
-div.Mobile_Nav ul.linksMobile li {
+div.NavMobile ul.linksMobile li {
   margin: 10px 8px;
 }
 
-div.Mobile_Nav ul.linksMobile li a {
+div.NavMobile ul.linksMobile li a {
   text-decoration: none;
   color: var(--Gray-400);
   font-family: "Nooca1aad";
@@ -227,21 +216,21 @@ div.Mobile_Nav ul.linksMobile li a {
   border-bottom: solid 1.5px transparent;
 }
 
-div.Mobile_Nav ul.linksMobile li a:hover {
+div.NavMobile ul.linksMobile li a:hover {
   color: var(--Gray-50);
   border-bottom: solid 1.5px var(--Green-500);
 }
 
-div.Mobile_Nav div.actions_Mobile {
+div.NavMobile div.actionsMobile {
+  width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: nowrap row;
-  margin: 15px 0px;
 }
 
-div.Mobile_Nav div.actions_Mobile button {
+div.NavMobile div.actionsMobile button {
   width: 80px;
   height: 40px;
   outline: none;
@@ -256,13 +245,13 @@ div.Mobile_Nav div.actions_Mobile button {
   border: solid 1.5px transparent;
 }
 
-div.Mobile_Nav div.actions_Mobile button:hover {
+div.NavMobile div.actionsMobile button:hover {
   background-color: var(--Gray-900);
   border: solid 1.5px var(--Green-500);
   color: var(--Gray-50);
 }
 
-div.Mobile_Nav div.actions_Mobile button:nth-child(1) {
+div.NavMobile div.actionsMobile button:nth-child(1) {
   color: var(--Gray-400);
   background-color: transparent;
 }
@@ -2807,6 +2796,10 @@ footer div.CopyRight p {
     grid-template-rows: repeat(6, auto);
   }
 
+  div.Blogs div.Blog div.Title_and_desc form input {
+    width: 250px;
+  }
+
   /* app */
   section.app div.application {
     flex-flow: wrap column;
@@ -3204,6 +3197,10 @@ footer div.CopyRight p {
     display: none;
   }
 
+  div.NavMobile {
+    display: none;
+  }
+
   /* Hero */
 
   section.Hero div.Parts div.part.left h2 {
@@ -3361,6 +3358,9 @@ footer div.CopyRight p {
   div.Baricon {
     display: none;
   }
+  div.NavMobile {
+    display: none;
+  }
 
   /* Hero */
   section.Hero div.Parts div.part.left div.btn_Hero button:nth-child(2) {
@@ -3377,6 +3377,9 @@ footer div.CopyRight p {
   div.Baricon {
     display: none;
   }
+  div.NavMobile {
+    display: none;
+  }
 }
 
 /* XXlG screen*/
@@ -3386,6 +3389,9 @@ footer div.CopyRight p {
   }
 
   div.Baricon {
+    display: none;
+  }
+  div.NavMobile {
     display: none;
   }
 }

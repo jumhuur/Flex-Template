@@ -43,8 +43,8 @@
               <i class="fa-solid fa-bars"></i>
             </div>
           </div>
-          <div id="Mobile_Nav" class="Mobile_Nav">
-            <div class="navM">
+          <div id="NavMobile" class="NavMobile">
+            <div class="Mbile_Nav">
               <ul class="linksMobile">
                 <li>
                   <a href="#">Product</a>
@@ -59,7 +59,7 @@
                   <a href="#">Resources</a>
                 </li>
               </ul>
-              <div class="actions_Mobile">
+              <div class="actionsMobile">
                 <a href="#"
                   ><button>
                     Login <i class="fa-solid fa-right-to-bracket"></i></button
@@ -1299,5 +1299,13 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const NavIcon = document.getElementById("Baricon");
+      const MenuMobile = document.getElementById("NavMobile");
+      NavIcon.onclick = () => {
+        MenuMobile.classList.toggle("Active");
+      };
+    </script>
   </body>
 </html>
