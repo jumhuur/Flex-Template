@@ -91,6 +91,11 @@ div.navSection nav div.logo {
   flex-flow: wrap column;
 }
 
+div.navSection nav div.logo img {
+  width: 95px;
+  height: 32px;
+}
+
 div.navSection nav ul.links {
   height: 100%;
   display: flex;
@@ -367,16 +372,21 @@ section.Hero div.Parts div.part.right img {
 }
 
 section.Hero div.Parts div.part.right div.pt {
-  height: 100px;
+  width: 129px;
+  height: 129px;
   position: absolute;
 }
 
 section.Hero div.Parts div.part.right div.pt:nth-child(1) {
+  width: 129px;
+  height: 129px;
   top: -35px;
   left: -15px;
 }
 
 section.Hero div.Parts div.part.right div.pt:nth-child(2) {
+  width: 149px;
+  height: 90px;
   bottom: -21px;
   right: -28px;
 }
