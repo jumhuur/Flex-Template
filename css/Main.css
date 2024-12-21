@@ -388,7 +388,7 @@ section.Hero div.Parts div.part.right div.pt:nth-child(2) {
   width: 149px;
   height: 90px;
   bottom: -21px;
-  right: -28px;
+  right: -8px;
 }
 
 /* how it Works Style  */
@@ -779,7 +779,7 @@ section.JoinSection div.join div.qaybo div.qayb.Midig div.pt {
 
 section.JoinSection div.join div.qaybo div.qayb.Midig div.pt:nth-child(1) {
   top: -41px;
-  right: -39px;
+  right: -25px;
   z-index: 3;
 }
 
@@ -2442,6 +2442,7 @@ div.FaqSection div.FAQ div.cards {
   grid-template-rows: repeat(2, auto);
   gap: 40px;
   margin: 30px 0px;
+  column-gap: 20px;
 }
 
 div.FaqSection div.FAQ div.cards div.card div.num {
@@ -3127,7 +3128,7 @@ footer div.CopyRight p {
   /* Jobs */
   section.JobsSection div.jobs div.Title_and_desc form input,
   select {
-    width: 500px;
+    width: 400px;
   }
   section.JobsSection div.jobs div.Title_and_desc form div.searchinput {
     margin: 10px 0px;
